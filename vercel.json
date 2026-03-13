@@ -1,0 +1,15 @@
+{
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/victor-challenge",
+      "destination": "/victor-challenge"
+    },
+    {
+      "source": "/victor-challenge-ty",
+      "destination": "/victor-challenge-ty"
+    }
+  ]
+}
