@@ -14,10 +14,13 @@ export default function ThankYouPage() {
     <main>
       {/* ── SECTION 1: HERO ── */}
       <section className="bg-[#161616] px-4 py-20 text-center">
-        {/* Logo placeholder */}
-        <div className="mx-auto mb-6 flex h-[80px] w-[80px] items-center justify-center rounded-full border-2 border-white/30">
-          <span className="text-lg font-bold tracking-widest text-white">LGW</span>
-        </div>
+        {/* LGW Logo */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/lgw-logo-white.png"
+          alt="Let's Go Win"
+          className="mx-auto mb-6 h-[60px] w-auto"
+        />
 
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
           You&apos;re In 🏆

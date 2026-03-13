@@ -86,10 +86,13 @@ export default function OptInPage() {
         id="hero"
         className="bg-[#161616] px-4 py-20 text-center"
       >
-        {/* Logo placeholder — swap with real SVG */}
-        <div className="mx-auto mb-6 flex h-[80px] w-[80px] items-center justify-center rounded-full border-2 border-white/30">
-          <span className="text-lg font-bold tracking-widest text-white">LGW</span>
-        </div>
+        {/* LGW Logo */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/lgw-logo-white.png"
+          alt="Let's Go Win"
+          className="mx-auto mb-6 h-[60px] w-auto"
+        />
 
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
           Free 7-Day Challenge
@@ -192,10 +195,13 @@ export default function OptInPage() {
       {/* ── SECTION 4: ABOUT JM ── */}
       <section className="bg-[#161616] px-4 py-20">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 md:flex-row md:gap-16">
-          {/* Photo placeholder */}
-          <div className="flex h-64 w-64 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-white/30">
-            <span className="text-sm">[JM Headshot]</span>
-          </div>
+          {/* JM Headshot */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/jm-headshot.jpg"
+            alt="JM Ryerson"
+            className="h-72 w-72 flex-shrink-0 rounded-2xl object-cover object-top shadow-xl"
+          />
 
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
