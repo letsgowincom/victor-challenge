@@ -1,9 +1,7 @@
-import type { NextConfig } from "next";
-
 const isStaticExport = process.env.EXPORT === "true";
 
-const nextConfig: NextConfig = {
-  // Static export for GitHub Pages preview
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   ...(isStaticExport && {
     output: "export",
     basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
