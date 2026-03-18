@@ -84,7 +84,7 @@ export default function OptInPage() {
       {/* ── SECTION 1: HERO ── */}
       <section
         id="hero"
-        className="bg-[#161616] px-4 py-20 text-center"
+        className="bg-[#191919] px-4 py-20 text-center"
       >
         {/* LGW Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -94,7 +94,7 @@ export default function OptInPage() {
           className="mx-auto mb-6 h-[60px] w-auto"
         />
 
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
           Free 7-Day Challenge
         </p>
 
@@ -121,7 +121,7 @@ export default function OptInPage() {
               required
               value={form.firstName}
               onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-              className="rounded-lg border border-gray-200 px-4 py-3 text-[#161616] placeholder-gray-400 focus:border-[#ff5086] focus:outline-none"
+              className="rounded-lg border border-gray-200 px-4 py-3 text-[#191919] placeholder-gray-400 focus:border-[#FF3B30] focus:outline-none"
             />
             <input
               type="email"
@@ -129,7 +129,7 @@ export default function OptInPage() {
               required
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="rounded-lg border border-gray-200 px-4 py-3 text-[#161616] placeholder-gray-400 focus:border-[#ff5086] focus:outline-none"
+              className="rounded-lg border border-gray-200 px-4 py-3 text-[#191919] placeholder-gray-400 focus:border-[#FF3B30] focus:outline-none"
             />
             <input
               type="tel"
@@ -137,7 +137,7 @@ export default function OptInPage() {
               required
               value={form.phone}
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
-              className="rounded-lg border border-gray-200 px-4 py-3 text-[#161616] placeholder-gray-400 focus:border-[#ff5086] focus:outline-none"
+              className="rounded-lg border border-gray-200 px-4 py-3 text-[#191919] placeholder-gray-400 focus:border-[#FF3B30] focus:outline-none"
             />
 
             {error && (
@@ -147,7 +147,7 @@ export default function OptInPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-lg bg-[#ff5086] py-4 font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+              className="w-full rounded-lg bg-[#FF3B30] py-4 font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
             >
               {loading ? "Sending…" : "Send Me the 7-Day Challenge →"}
             </button>
@@ -160,7 +160,7 @@ export default function OptInPage() {
       </section>
 
       {/* ── SECTION 2: SOCIAL PROOF BAR ── */}
-      <section className="bg-[#1a1a1a] px-4 py-5 text-center">
+      <section className="bg-[#212121] px-4 py-5 text-center">
         <p className="text-sm text-white/80">
           🎙️ 400+ Podcast Appearances&nbsp;&nbsp;·&nbsp;&nbsp;📚 3x Bestselling
           Author&nbsp;&nbsp;·&nbsp;&nbsp;🏆 20+ Years Coaching CEOs
@@ -169,10 +169,10 @@ export default function OptInPage() {
 
       {/* ── SECTION 3: WHAT YOU'RE GETTING ── */}
       <section className="bg-[#f2f2f2] px-4 py-20 text-center">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#ff5086]">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
           Inside the 7-Day Victor Challenge
         </p>
-        <h2 className="mx-auto mb-12 max-w-lg text-3xl font-bold text-[#161616] md:text-4xl">
+        <h2 className="mx-auto mb-12 max-w-lg text-3xl font-bold text-[#191919] md:text-4xl">
           7 Days. 7 Shifts. One Upgraded Version of You.
         </h2>
 
@@ -182,10 +182,10 @@ export default function OptInPage() {
               key={d.day}
               className="rounded-lg bg-white p-5 text-left shadow-sm"
             >
-              <span className="mb-2 inline-block rounded-full bg-[#ff5086] px-3 py-1 text-xs font-bold text-white">
+              <span className="mb-2 inline-block rounded-full bg-[#FF3B30] px-3 py-1 text-xs font-bold text-white">
                 {d.day}
               </span>
-              <h3 className="mb-1 font-bold text-[#161616]">{d.title}</h3>
+              <h3 className="mb-1 font-bold text-[#191919]">{d.title}</h3>
               <p className="text-sm text-gray-500">{d.desc}</p>
             </div>
           ))}
@@ -193,7 +193,7 @@ export default function OptInPage() {
       </section>
 
       {/* ── SECTION 4: ABOUT JM ── */}
-      <section className="bg-[#161616] px-4 py-20">
+      <section className="bg-[#191919] px-4 py-20">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 md:flex-row md:gap-16">
           {/* JM Headshot */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -204,7 +204,7 @@ export default function OptInPage() {
           />
 
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
               Your Coach
             </p>
             <h3 className="mb-4 text-3xl font-bold text-white">JM Ryerson</h3>
@@ -218,7 +218,7 @@ export default function OptInPage() {
               400+ podcasts. Coached on 6 continents. His community of high
               performers chooses to win — every single day.
             </p>
-            <p className="text-base italic text-[#ffe048]">
+            <p className="text-base italic text-[#FFFFFF]">
               &quot;Nobody likes change. Everyone loves to be upgraded.&quot; — JM Ryerson
             </p>
           </div>
@@ -227,7 +227,7 @@ export default function OptInPage() {
 
       {/* ── SECTION 5: TESTIMONIALS ── */}
       <section className="bg-white px-4 py-20 text-center">
-        <h2 className="mb-12 text-3xl font-bold text-[#161616] md:text-4xl">
+        <h2 className="mb-12 text-3xl font-bold text-[#191919] md:text-4xl">
           What Leaders Are Saying
         </h2>
 
@@ -237,11 +237,11 @@ export default function OptInPage() {
               key={i}
               className="rounded-lg border border-gray-200 p-6 text-center"
             >
-              <p className="mb-2 text-[#ffe048]">★★★★★</p>
+              <p className="mb-2 text-[#FFFFFF]">★★★★★</p>
               <p className="mb-4 text-sm italic text-gray-600">
                 &quot;[Testimonial quote from a leader or CEO — 1–2 lines.]&quot;
               </p>
-              <p className="text-sm font-semibold text-[#161616]">
+              <p className="text-sm font-semibold text-[#191919]">
                 — [Name, Title]
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function OptInPage() {
       </section>
 
       {/* ── SECTION 6: FINAL CTA ── */}
-      <section className="bg-[#ff5086] px-4 py-20 text-center">
+      <section className="bg-[#FF3B30] px-4 py-20 text-center">
         <h2 className="mx-auto mb-4 max-w-xl text-4xl font-bold text-white">
           Ready to Stop Performing and Start Winning?
         </h2>
@@ -259,7 +259,7 @@ export default function OptInPage() {
         </p>
         <a
           href="#optin-form"
-          className="inline-block rounded-lg bg-white px-10 py-4 font-bold text-[#161616] transition-opacity hover:opacity-90"
+          className="inline-block rounded-lg bg-white px-10 py-4 font-bold text-[#191919] transition-opacity hover:opacity-90"
         >
           Send Me the 7-Day Challenge →
         </a>

@@ -9,18 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        pink: {
-          lgw: "#ff5086",
+        // LGW Sub-brand ring colors (use per sub-brand only)
+        red: {
+          lgw: "#FF3B30",   // Let's Go Win ring
         },
-        yellow: {
-          lgw: "#ffe048",
+        gold: {
+          lgw: "#FFD700",   // Win From Within ring
         },
-        teal: {
-          lgw: "#79d3d1",
+        aqua: {
+          lgw: "#00B9C9",   // Let's Go Give ring
         },
+        // Site structural colors
         dark: {
-          lgw: "#161616",
-          "lgw-2": "#1a1a1a",
+          lgw: "#191919",
+          "lgw-2": "#212121",
+          teal: "#0F4951",
         },
       },
       fontFamily: {

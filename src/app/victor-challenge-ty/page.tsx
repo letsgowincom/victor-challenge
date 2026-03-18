@@ -13,7 +13,7 @@ export default function ThankYouPage() {
   return (
     <main>
       {/* ── SECTION 1: HERO ── */}
-      <section className="bg-[#161616] px-4 py-20 text-center">
+      <section className="bg-[#191919] px-4 py-20 text-center">
         {/* LGW Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -22,7 +22,7 @@ export default function ThankYouPage() {
           className="mx-auto mb-6 h-[60px] w-auto"
         />
 
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#79d3d1]">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
           You&apos;re In 🏆
         </p>
 
@@ -38,7 +38,7 @@ export default function ThankYouPage() {
 
         <a
           href={process.env.NEXT_PUBLIC_GHL_COMMUNITY_URL || "#"}
-          className="inline-block rounded-lg bg-[#ff5086] px-8 py-4 font-bold text-white transition-opacity hover:opacity-90"
+          className="inline-block rounded-lg bg-[#FF3B30] px-8 py-4 font-bold text-white transition-opacity hover:opacity-90"
         >
           Access the Victor Challenge →
         </a>
@@ -49,8 +49,8 @@ export default function ThankYouPage() {
       </section>
 
       {/* ── SECTION 2: VSL / AUDIO MESSAGE ── */}
-      <section className="bg-[#1a1a1a] px-4 py-16 text-center">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffe048]">
+      <section className="bg-[#212121] px-4 py-16 text-center">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
           Watch This First
         </p>
         <h2 className="mb-8 text-2xl font-bold text-white md:text-3xl">
@@ -82,22 +82,22 @@ export default function ThankYouPage() {
 
       {/* ── SECTION 3: WHAT HAPPENS NEXT ── */}
       <section className="bg-[#f2f2f2] px-4 py-20 text-center">
-        <h2 className="mb-12 text-3xl font-bold text-[#161616] md:text-4xl">
+        <h2 className="mb-12 text-3xl font-bold text-[#191919] md:text-4xl">
           Here&apos;s Your Game Plan
         </h2>
 
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#ff5086]">1</p>
-            <h3 className="mb-2 font-bold text-[#161616]">Check Your Texts</h3>
+            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">1</p>
+            <h3 className="mb-2 font-bold text-[#191919]">Check Your Texts</h3>
             <p className="text-sm text-gray-500">
               JM just sent you a message. Reply back — that&apos;s where the real
               conversation happens.
             </p>
           </div>
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#ff5086]">2</p>
-            <h3 className="mb-2 font-bold text-[#161616]">
+            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">2</p>
+            <h3 className="mb-2 font-bold text-[#191919]">
               Access the Community
             </h3>
             <p className="text-sm text-gray-500">
@@ -106,8 +106,8 @@ export default function ThankYouPage() {
             </p>
           </div>
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#ff5086]">3</p>
-            <h3 className="mb-2 font-bold text-[#161616]">Do the Work</h3>
+            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">3</p>
+            <h3 className="mb-2 font-bold text-[#191919]">Do the Work</h3>
             <p className="text-sm text-gray-500">
               One challenge per day. 10 minutes max. By Day 7, you&apos;ll know
               exactly who you are when you show up as your best self.
@@ -117,7 +117,7 @@ export default function ThankYouPage() {
       </section>
 
       {/* ── SECTION 4: COMMUNITY CTA ── */}
-      <section className="bg-[#161616] px-4 py-20 text-center">
+      <section className="bg-[#191919] px-4 py-20 text-center">
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
           Your Challenge Starts Now.
         </h2>
@@ -126,11 +126,11 @@ export default function ThankYouPage() {
         </p>
         <a
           href={process.env.NEXT_PUBLIC_GHL_COMMUNITY_URL || "#"}
-          className="inline-block rounded-lg bg-[#ffe048] px-10 py-4 font-bold text-[#161616] transition-opacity hover:opacity-90"
+          className="inline-block rounded-lg bg-[#FF3B30] px-10 py-4 font-bold text-white transition-opacity hover:opacity-90"
         >
           Enter the Victor Challenge →
         </a>
-        <p className="mt-6 text-sm italic text-[#79d3d1]">
+        <p className="mt-6 text-sm italic text-[#FF3B30]">
           💬 &quot;You made a decision today. That&apos;s a Victor move. See you
           inside.&quot; — JM
         </p>
