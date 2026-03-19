@@ -89,28 +89,28 @@ export default function OptInPage() {
   return (
     <main>
       {/* ── NAV ── */}
-      <nav className="bg-white px-6 py-3 border-b border-gray-100">
+      <nav className="bg-white px-4 py-2 border-b border-gray-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/lgw-logo-black.png"
           alt="Let's Go Win"
-          className="h-[36px] w-auto"
+          className="h-[30px] w-auto"
         />
       </nav>
 
       {/* ── SECTION 1: HERO ── */}
-      {/* Mobile: tight padding so form hits above the fold */}
-      <section className="bg-white px-4 pt-6 pb-10 text-center md:py-20">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
+      {/* Mobile: ultra-tight padding so CTA button hits above the fold */}
+      <section className="bg-white px-4 pt-4 pb-8 text-center md:py-20">
+        <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
           Free 7-Day Challenge
         </p>
 
-        <h1 className="mx-auto mb-2 max-w-2xl text-3xl font-extrabold leading-tight text-[#191919] md:text-5xl md:mb-4">
+        <h1 className="mx-auto mb-1 max-w-2xl text-2xl font-extrabold leading-tight text-[#191919] md:text-5xl md:mb-4">
           You&apos;re Built to Win.{" "}
           <span className="text-[#FF3B30]">From Within.</span>
         </h1>
 
-        <p className="mx-auto mb-4 max-w-xl text-base text-gray-600 md:text-xl md:mb-10">
+        <p className="mx-auto mb-3 max-w-xl text-sm text-gray-600 md:text-xl md:mb-10">
           Get the daily playbook JM uses to help leaders upgrade their mindset,
           their circle, and their results — in just 7 days.
         </p>
@@ -118,9 +118,9 @@ export default function OptInPage() {
         {/* OPT-IN FORM */}
         <div
           id="optin-form"
-          className="mx-auto max-w-[480px] rounded-2xl border border-gray-200 bg-white p-5 shadow-lg md:p-8"
+          className="mx-auto max-w-[480px] rounded-2xl border border-gray-200 bg-white p-4 shadow-lg md:p-8"
         >
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-2 md:gap-4">
             <input
               type="text"
               placeholder="First Name"
