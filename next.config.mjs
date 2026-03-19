@@ -10,6 +10,15 @@ const nextConfig = {
   images: {
     domains: [],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "https://www.letsgowin.com",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
