@@ -327,10 +327,10 @@ export default function OptInPage() {
       {/* ── SECTION 6: FINAL CTA ── */}
       <section className="bg-[#FF3B30] px-4 py-20 text-center">
         <h2 className="mx-auto mb-4 max-w-xl text-4xl font-extrabold text-white">
-          Ready to Stop Performing and Start Winning?
+          Ready to Upgrade Your Game and Win From Within?
         </h2>
         <p className="mx-auto mb-10 max-w-md text-lg text-white/90">
-          Join thousands of leaders who chose to upgrade. It starts with Day 1.
+          Join thousands of leaders who chose to perform at their best — every single day. It starts with Day 1.
         </p>
         <a
           href="#optin-form"
