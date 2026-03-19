@@ -89,10 +89,10 @@ export default function OptInPage() {
   return (
     <main>
       {/* ── NAV ── */}
-      <nav className="bg-white px-6 py-4 border-b border-gray-100">
+      <nav className="bg-white px-6 py-4 border-b border-gray-100 border-t-4 border-t-[#0F4951]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/lgw-logo-black.png"
+          src="/images/lgw-logo-color.png"
           alt="Let's Go Win"
           className="h-[48px] w-auto"
         />
@@ -164,7 +164,7 @@ export default function OptInPage() {
       </section>
 
       {/* ── SECTION 2: SOCIAL PROOF BAR ── */}
-      <section className="bg-[#191919] px-4 py-5 text-center">
+      <section className="bg-[#0F4951] px-4 py-5 text-center">
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/80">
           <span>🎙️ 400+ Podcast Appearances</span>
           <span className="hidden sm:inline text-white/30">·</span>
@@ -211,7 +211,7 @@ export default function OptInPage() {
             alt="JM Ryerson"
             className="w-full max-w-[288px] flex-shrink-0 rounded-2xl object-cover object-top shadow-xl md:h-72 md:w-72"
           />
-          <div>
+          <div className="border-l-4 border-[#0F4951] pl-6">
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
               Your Coach
             </p>
