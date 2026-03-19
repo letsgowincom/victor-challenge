@@ -239,18 +239,33 @@ export default function OptInPage() {
         </h2>
 
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
-          {[1, 2, 3].map((i) => (
+          {[
+            {
+              quote: "He's an excellent listener and helps you discover what you really want, on your own. JM has a real gift — it's in his communication style.",
+              name: "Andy Davis",
+              title: "",
+            },
+            {
+              quote: "JM showed me I can improve myself every day by taking small steps at a time which lead to bigger strides in life. I am so thankful to have JM in my life!",
+              name: "Koki Arai",
+              title: "HR Manager, Mikuni Restaurant Group",
+            },
+            {
+              quote: "JM Ryerson is a winning proposition. He helped me build my leadership skills and gave me the tools I was lacking to achieve the goals I aspired to. The man energizes and is the real deal!",
+              name: "Joy Eber",
+              title: "Owner, Inside Out",
+            },
+          ].map((t) => (
             <div
-              key={i}
+              key={t.name}
               className="rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm"
             >
               <p className="mb-2 text-[#FFD700]">★★★★★</p>
               <p className="mb-4 text-sm italic text-gray-600">
-                &quot;[Testimonial quote from a leader or CEO — 1–2 lines.]&quot;
+                &quot;{t.quote}&quot;
               </p>
-              <p className="text-sm font-semibold text-[#191919]">
-                — [Name, Title]
-              </p>
+              <p className="text-sm font-semibold text-[#191919]">— {t.name}</p>
+              {t.title && <p className="text-xs text-gray-400">{t.title}</p>}
             </div>
           ))}
         </div>
