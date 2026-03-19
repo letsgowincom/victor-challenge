@@ -92,7 +92,7 @@ export default function OptInPage() {
       <nav className="bg-white px-6 py-4 border-b border-gray-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/lgw-logo-black.png"
+          src="/images/lgw-logo-color.png"
           alt="Let's Go Win"
           className="h-[48px] w-auto"
         />
