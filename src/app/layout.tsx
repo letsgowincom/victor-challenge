@@ -19,6 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Montserrat — LGW brand font */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
         {/* GA4 — swap G-XXXXXXXXXX with real ID */}
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>

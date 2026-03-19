@@ -3,41 +3,58 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+// Brand palette: Gold #FFD700 | Red #FF3B30 | Aqua #00B9C9
+const BRAND = {
+  red: "#FF3B30",
+  gold: "#FFD700",
+  aqua: "#00B9C9",
+  dark: "#191919",
+  darkAlt: "#212121",
+  light: "#f2f2f2",
+};
+
 const DAYS = [
   {
     day: "Day 1",
     title: "CHOOSE",
     desc: "Victim or Victor — you decide every morning. It starts with a piece of paper and a line down the middle.",
+    color: BRAND.red,
   },
   {
     day: "Day 2",
     title: "RECOGNIZE",
     desc: "You can't fix what you can't see. Three intentional pauses today to catch yourself in the act.",
+    color: BRAND.gold,
   },
   {
     day: "Day 3",
     title: "RELEASE",
     desc: "What you hold onto, holds you back. Write it. Throw it away. Say it out loud. Done.",
+    color: BRAND.aqua,
   },
   {
     day: "Day 4",
     title: "RESPOND",
     desc: "The gap between reaction and response is where your power lives. 10 seconds changes everything.",
+    color: BRAND.red,
   },
   {
     day: "Day 5",
     title: "YOUR CIRCLE",
     desc: "You are the average of your 5 closest people. Honest list. One encouraging message. Watch what happens.",
+    color: BRAND.gold,
   },
   {
     day: "Day 6",
     title: "MIND · BODY · SOUL",
     desc: "All three. Every day. No exceptions. Small consistent actions compound into massive results.",
+    color: BRAND.aqua,
   },
   {
     day: "Day 7",
     title: "SHOW UP AS YOU",
     desc: "Your Victor Declaration. One paragraph. Read it out loud. This is who you actually are.",
+    color: BRAND.red,
   },
 ];
 
@@ -94,14 +111,14 @@ export default function OptInPage() {
           className="mx-auto mb-6 h-[60px] w-auto"
         />
 
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
           Free 7-Day Challenge
         </p>
 
-        <h1 className="mx-auto mb-6 max-w-2xl text-4xl font-bold leading-tight text-white md:text-5xl">
+        <h1 className="mx-auto mb-4 max-w-2xl text-4xl font-extrabold leading-tight text-white md:text-5xl">
           You&apos;re Built to Win.
           <br />
-          From Within.
+          <span className="text-[#FFD700]">From Within.</span>
         </h1>
 
         <p className="mx-auto mb-10 max-w-xl text-lg font-light text-white/80 md:text-xl">
@@ -161,10 +178,13 @@ export default function OptInPage() {
 
       {/* ── SECTION 2: SOCIAL PROOF BAR ── */}
       <section className="bg-[#212121] px-4 py-5 text-center">
-        <p className="text-sm text-white/80">
-          🎙️ 400+ Podcast Appearances&nbsp;&nbsp;·&nbsp;&nbsp;📚 3x Bestselling
-          Author&nbsp;&nbsp;·&nbsp;&nbsp;🏆 20+ Years Coaching CEOs
-        </p>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/80">
+          <span>🎙️ 400+ Podcast Appearances</span>
+          <span className="hidden sm:inline text-white/30">·</span>
+          <span>📚 3x Bestselling Author</span>
+          <span className="hidden sm:inline text-white/30">·</span>
+          <span>🏆 20+ Years Coaching CEOs</span>
+        </div>
       </section>
 
       {/* ── SECTION 3: WHAT YOU'RE GETTING ── */}
@@ -172,7 +192,7 @@ export default function OptInPage() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
           Inside the 7-Day Victor Challenge
         </p>
-        <h2 className="mx-auto mb-12 max-w-lg text-3xl font-bold text-[#191919] md:text-4xl">
+        <h2 className="mx-auto mb-12 max-w-lg text-3xl font-extrabold text-[#191919] md:text-4xl">
           7 Days. 7 Shifts. One Upgraded Version of You.
         </h2>
 
@@ -182,7 +202,10 @@ export default function OptInPage() {
               key={d.day}
               className="rounded-lg bg-white p-5 text-left shadow-sm"
             >
-              <span className="mb-2 inline-block rounded-full bg-[#FF3B30] px-3 py-1 text-xs font-bold text-white">
+              <span
+                className="mb-2 inline-block rounded-full px-3 py-1 text-xs font-bold text-white"
+                style={{ backgroundColor: d.color }}
+              >
                 {d.day}
               </span>
               <h3 className="mb-1 font-bold text-[#191919]">{d.title}</h3>
@@ -200,14 +223,14 @@ export default function OptInPage() {
           <img
             src="/images/jm-headshot.jpg"
             alt="JM Ryerson"
-            className="h-72 w-72 flex-shrink-0 rounded-2xl object-cover object-top shadow-xl"
+            className="w-full max-w-[288px] flex-shrink-0 rounded-2xl object-cover object-top shadow-xl md:h-72 md:w-72"
           />
 
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
               Your Coach
             </p>
-            <h3 className="mb-4 text-3xl font-bold text-white">JM Ryerson</h3>
+            <h3 className="mb-4 text-3xl font-extrabold text-white">JM Ryerson</h3>
             <p className="mb-4 text-base font-light leading-relaxed text-white/80">
               Executive coach, speaker, and 3x bestselling author. JM has spent
               over 20 years helping CEOs, founders, and senior leaders unlock
@@ -218,7 +241,7 @@ export default function OptInPage() {
               400+ podcasts. Coached on 6 continents. His community of high
               performers chooses to win — every single day.
             </p>
-            <p className="text-base italic text-[#FFFFFF]">
+            <p className="text-base italic text-[#FFD700]">
               &quot;Nobody likes change. Everyone loves to be upgraded.&quot; — JM Ryerson
             </p>
           </div>
@@ -227,7 +250,7 @@ export default function OptInPage() {
 
       {/* ── SECTION 5: TESTIMONIALS ── */}
       <section className="bg-white px-4 py-20 text-center">
-        <h2 className="mb-12 text-3xl font-bold text-[#191919] md:text-4xl">
+        <h2 className="mb-12 text-3xl font-extrabold text-[#191919] md:text-4xl">
           What Leaders Are Saying
         </h2>
 
@@ -237,7 +260,7 @@ export default function OptInPage() {
               key={i}
               className="rounded-lg border border-gray-200 p-6 text-center"
             >
-              <p className="mb-2 text-[#FFFFFF]">★★★★★</p>
+              <p className="mb-2 text-[#FFD700]">★★★★★</p>
               <p className="mb-4 text-sm italic text-gray-600">
                 &quot;[Testimonial quote from a leader or CEO — 1–2 lines.]&quot;
               </p>
@@ -251,7 +274,7 @@ export default function OptInPage() {
 
       {/* ── SECTION 6: FINAL CTA ── */}
       <section className="bg-[#FF3B30] px-4 py-20 text-center">
-        <h2 className="mx-auto mb-4 max-w-xl text-4xl font-bold text-white">
+        <h2 className="mx-auto mb-4 max-w-xl text-4xl font-extrabold text-white">
           Ready to Stop Performing and Start Winning?
         </h2>
         <p className="mx-auto mb-10 max-w-md text-lg text-white/90">
@@ -259,7 +282,7 @@ export default function OptInPage() {
         </p>
         <a
           href="#optin-form"
-          className="inline-block rounded-lg bg-white px-10 py-4 font-bold text-[#191919] transition-opacity hover:opacity-90"
+          className="inline-block rounded-lg bg-[#FFD700] px-10 py-4 font-bold text-[#191919] transition-opacity hover:opacity-90"
         >
           Send Me the 7-Day Challenge →
         </a>

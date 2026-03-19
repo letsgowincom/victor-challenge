@@ -22,12 +22,13 @@ export default function ThankYouPage() {
           className="mx-auto mb-6 h-[60px] w-auto"
         />
 
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
           You&apos;re In 🏆
         </p>
 
-        <h1 className="mx-auto mb-5 max-w-2xl text-4xl font-bold text-white md:text-5xl">
-          You Just Made a Victor Move.
+        <h1 className="mx-auto mb-5 max-w-2xl text-4xl font-extrabold text-white md:text-5xl">
+          You Just Made a{" "}
+          <span className="text-[#FFD700]">Victor Move.</span>
         </h1>
 
         <p className="mx-auto mb-10 max-w-xl text-lg font-light text-white/80">
@@ -43,22 +44,22 @@ export default function ThankYouPage() {
           Access the Victor Challenge →
         </a>
 
-        <p className="mt-4 text-sm italic text-gray-400">
+        <p className="mt-4 text-sm italic text-[#FFD700]">
           Check your texts — JM sent you a personal message.
         </p>
       </section>
 
       {/* ── SECTION 2: VSL / AUDIO MESSAGE ── */}
       <section className="bg-[#212121] px-4 py-16 text-center">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#00B9C9]">
           Watch This First
         </p>
-        <h2 className="mb-8 text-2xl font-bold text-white md:text-3xl">
+        <h2 className="mb-8 text-2xl font-extrabold text-white md:text-3xl">
           A Message From JM
         </h2>
 
         {/* Audio player — /public/audio/ty_welcome.mp3 */}
-        <div className="mx-auto max-w-lg rounded-xl bg-white/5 p-6">
+        <div className="mx-auto max-w-lg rounded-xl bg-white/5 p-6 border border-white/10">
           <audio
             ref={audioRef}
             controls
@@ -73,7 +74,7 @@ export default function ThankYouPage() {
         </div>
 
         {/* Trust signals */}
-        <div className="mt-10 flex flex-wrap justify-center gap-8 text-sm text-white/70">
+        <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-white/70">
           <span>📲 JM texted you — reply back</span>
           <span>🔓 Instant community access below</span>
           <span>🏆 7 days to a new standard</span>
@@ -82,21 +83,21 @@ export default function ThankYouPage() {
 
       {/* ── SECTION 3: WHAT HAPPENS NEXT ── */}
       <section className="bg-[#f2f2f2] px-4 py-20 text-center">
-        <h2 className="mb-12 text-3xl font-bold text-[#191919] md:text-4xl">
+        <h2 className="mb-12 text-3xl font-extrabold text-[#191919] md:text-4xl">
           Here&apos;s Your Game Plan
         </h2>
 
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">1</p>
+            <p className="mb-3 text-3xl font-extrabold text-[#FF3B30]">1</p>
             <h3 className="mb-2 font-bold text-[#191919]">Check Your Texts</h3>
             <p className="text-sm text-gray-500">
               JM just sent you a message. Reply back — that&apos;s where the real
               conversation happens.
             </p>
           </div>
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">2</p>
+          <div className="rounded-xl bg-white p-6 shadow-sm border-t-4 border-[#FFD700]">
+            <p className="mb-3 text-3xl font-extrabold text-[#FFD700]">2</p>
             <h3 className="mb-2 font-bold text-[#191919]">
               Access the Community
             </h3>
@@ -105,8 +106,8 @@ export default function ThankYouPage() {
               1 unlocks immediately.
             </p>
           </div>
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="mb-3 text-3xl font-bold text-[#FF3B30]">3</p>
+          <div className="rounded-xl bg-white p-6 shadow-sm border-t-4 border-[#00B9C9]">
+            <p className="mb-3 text-3xl font-extrabold text-[#00B9C9]">3</p>
             <h3 className="mb-2 font-bold text-[#191919]">Do the Work</h3>
             <p className="text-sm text-gray-500">
               One challenge per day. 10 minutes max. By Day 7, you&apos;ll know
@@ -118,7 +119,7 @@ export default function ThankYouPage() {
 
       {/* ── SECTION 4: COMMUNITY CTA ── */}
       <section className="bg-[#191919] px-4 py-20 text-center">
-        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+        <h2 className="mb-4 text-3xl font-extrabold text-white md:text-4xl">
           Your Challenge Starts Now.
         </h2>
         <p className="mx-auto mb-10 max-w-md text-lg font-light text-white/80">
@@ -130,7 +131,7 @@ export default function ThankYouPage() {
         >
           Enter the Victor Challenge →
         </a>
-        <p className="mt-6 text-sm italic text-[#FF3B30]">
+        <p className="mt-6 text-sm italic text-[#FFD700]">
           💬 &quot;You made a decision today. That&apos;s a Victor move. See you
           inside.&quot; — JM
         </p>
