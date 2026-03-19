@@ -245,7 +245,7 @@ export default function OptInPage() {
             <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/STACY_VIDEO_ID"
+                src="https://www.youtube.com/embed/JdvbirnYxg4"
                 title="Stacy — Let's Go Win Testimonial"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -261,7 +261,7 @@ export default function OptInPage() {
             <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/PRESTON_VIDEO_ID"
+                src="https://www.youtube.com/embed/0h3p681L_EE"
                 title="Preston Salem — Let's Go Win Testimonial"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -277,7 +277,7 @@ export default function OptInPage() {
             <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/MIKE_VIDEO_ID"
+                src="https://www.youtube.com/embed/m5yOASwJmfg"
                 title="Mike Patton — Let's Go Win Testimonial"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
