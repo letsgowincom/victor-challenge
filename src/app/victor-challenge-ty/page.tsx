@@ -12,7 +12,7 @@ export default function ThankYouPage() {
   return (
     <main>
       {/* ── NAV ── */}
-      <nav className="bg-white px-6 py-4 border-b border-gray-100">
+      <nav className="bg-white px-6 py-4 border-b border-gray-100 border-t-4 border-t-[#0F4951]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/lgw-logo-color.png"
@@ -20,6 +20,17 @@ export default function ThankYouPage() {
           className="h-[48px] w-auto"
         />
       </nav>
+
+      {/* ── SOCIAL PROOF BAR ── */}
+      <section className="bg-[#0F4951] px-4 py-5 text-center">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/80">
+          <span>🎙️ 400+ Podcast Appearances</span>
+          <span className="hidden sm:inline text-white/30">·</span>
+          <span>📚 3x Bestselling Author</span>
+          <span className="hidden sm:inline text-white/30">·</span>
+          <span>🏆 20+ Years Coaching CEOs</span>
+        </div>
+      </section>
 
       {/* ── SECTION 1: HERO ── */}
       <section className="bg-white px-4 py-20 text-center">
@@ -82,6 +93,9 @@ export default function ThankYouPage() {
 
       {/* ── SECTION 3: WHAT HAPPENS NEXT ── */}
       <section className="bg-white px-4 py-20 text-center">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0F4951]">
+          Your Next Steps
+        </p>
         <h2 className="mb-12 text-3xl font-extrabold text-[#191919] md:text-4xl">
           Here&apos;s Your Game Plan
         </h2>
