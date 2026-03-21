@@ -239,6 +239,58 @@ export default function OptInPage() {
           What Leaders Are Saying
         </h2>
 
+        {/* Video testimonials */}
+        <div className="mx-auto mb-12 grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
+          {/* Stacy — upgrade not change */}
+          <div className="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/JdvbirnYxg4"
+                title="Stacy — Let's Go Win Testimonial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-4 text-left">
+              <p className="font-semibold text-[#191919]">Stacy</p>
+              <p className="text-xs text-gray-400">Event Attendee</p>
+            </div>
+          </div>
+          {/* Preston Salem — victim vs victor */}
+          <div className="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/0h3p681L_EE"
+                title="Preston Salem — Let's Go Win Testimonial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-4 text-left">
+              <p className="font-semibold text-[#191919]">Preston Salem</p>
+              <p className="text-xs text-gray-400">IEB Conference</p>
+            </div>
+          </div>
+          {/* Mike Patton — upgrade not change */}
+          <div className="overflow-hidden rounded-xl shadow-sm border border-gray-200 bg-white">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/m5yOASwJmfg"
+                title="Mike Patton — Let's Go Win Testimonial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-4 text-left">
+              <p className="font-semibold text-[#191919]">Mike Patton</p>
+              <p className="text-xs text-gray-400">Business Owner, Northern Kentucky</p>
+            </div>
+          </div>
+        </div>
+
         {/* Written testimonials */}
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
           {[
